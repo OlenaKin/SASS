@@ -1,0 +1,53 @@
+$dvdr: #FFCC00;
+$color: #666666;
+$secondaryColor: #333333;
+$thirdColor: #FFCC00;
+
+
+@import 'header';
+@import "main-container";
+@import "./mixin";
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      text-align: center;
+      .main-container__midDivider{
+        height: 0;
+      }
+    }
+  
+    .main-container__text {
+      align-items: center;
+    }
+  
+    .main-container__socLinks {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-container__button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
