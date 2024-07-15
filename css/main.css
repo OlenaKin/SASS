@@ -1,0 +1,144 @@
+header h1 {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+header h2 {
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #FFCC00;
+}
+header .header__border-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header__border-container .header__border-line {
+  width: 210px;
+  border: 1px solid #FFCC00;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+  padding: 80px 85px;
+  background-color: white;
+  gap: 85px;
+}
+.main-container > *:not(:nth-child(2)) {
+  height: 430px;
+  width: 430px;
+}
+.main-container .main-container__midDivider {
+  height: 35rem;
+  border: 1px solid #FFCC00;
+}
+.main-container .main-container__picture img {
+  max-width: 430px;
+  height: auto;
+}
+.main-container .main-container__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-container .main-container__text .main-containe__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.main-container .main-container__text .main-container__text-divider {
+  border: 1px solid #FFCC00;
+  width: 6.25rem;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.main-container .main-container__text .main-container__position {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 30px;
+}
+.main-container .main-container__text .main-container__socLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.main-container .main-container__text .main-container__socLinks img:hover {
+  transform: scale(1.2);
+}
+.main-container .main-container__text .main-container__paragraphBox {
+  width: 26.8rem;
+  height: 26.2rem;
+  color: #333333;
+}
+.main-container .main-container__text .main-container__paragraphBox .main-container__paragraph {
+  margin-bottom: 20px;
+}
+.main-container .main-container__text .main-container__bottomDivid {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 25px;
+}
+.main-container .main-container__text .main-container__button {
+  color: #333333;
+  width: 7.37rem;
+  height: 1.5rem;
+  border: 1px solid #FFCC00;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main-container .main-container__midDivider {
+    height: 0;
+  }
+  .main-container__text {
+    align-items: center;
+  }
+  .main-container__socLinks {
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .main-container__button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
